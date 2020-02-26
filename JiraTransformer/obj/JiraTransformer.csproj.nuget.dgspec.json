@@ -1,0 +1,65 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/linda.czinner/Projects/JiraTransformer/JiraTransformer/JiraTransformer.csproj": {}
+  },
+  "projects": {
+    "/Users/linda.czinner/Projects/JiraTransformer/JiraTransformer/JiraTransformer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/linda.czinner/Projects/JiraTransformer/JiraTransformer/JiraTransformer.csproj",
+        "projectName": "JiraTransformer",
+        "projectPath": "/Users/linda.czinner/Projects/JiraTransformer/JiraTransformer/JiraTransformer.csproj",
+        "packagesPath": "/Users/linda.czinner/.nuget/packages/",
+        "outputPath": "/Users/linda.czinner/Projects/JiraTransformer/JiraTransformer/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/linda.czinner/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[12.1.2, )"
+            },
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

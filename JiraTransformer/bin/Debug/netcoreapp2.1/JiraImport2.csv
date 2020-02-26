@@ -1,0 +1,119 @@
+IssueType,ParentId,TaskId,TaskName,TaskContent,Status,DateCreatedText,DueDateText,StartDateText,Assignees,Priority,ListName,ProjectName,SpaceName,TimeEstimated,tags1,tags2,tags3,tags4,tags5,attachment1,attachment2,attachment3,attachment4,attachment5,attachment6,attachment7
+sub-task,a3k5r,,Remove the temporary code snipets in: source/javascripts/services/_requestService.js.erb:191,null,Closed,15/May/19 2:15 PM,,,,null,Team Kata,Engineering,Iterations,,,,,,,,,,,,,
+story,,qd9bp,"Add a ""--free"" tag to DEN Tasks related to free repos (non paid repos).","Use case(s)\\ We'd like to have separate capacity for free builds, more limited than what we have/reserve for paid builds. Free should include all non-paid repos, both private & public.\\ How it should work for the user\\ Free repos should only be able to use free build agents/build VMs, while paid repos should be able to use both free & paid agents/build VMs.\\ \\ This would allow us to have more reserved capacity for paid users, and that free users will not be able to use all the available resources, there should always be spare capacity for paid projects.\\ Additional resources/research (optional)\\ See the related infra card:   \\ ",👀 blocked,01/Apr/19 4:50 PM,,,,2,Team Kata,Engineering,Iterations,10800,backend,enhancement,monolith,team-kata,,,,,,,,,"24/Apr/19 1:18 PM;kata.keri@bitrise.io;please check this out for estimation
+"
+story,,107z9b,Refactor preview_current_charge flow,"Add #preview_change to RecurlySubscription\\ preview_change(new_plan, container_count)\\   returns a SubscriptionPreview\\ \\ create SubscriptionPreview class with initializer and getters for:\\ #total_in_cents\\ #discount_in_cents\\ #next_charge_at\\ \\ Increase test cov of related code to 100%\\ ",🚀 in progress,07/Jun/19 5:36 PM,,,,1,Team Kata,Engineering,Iterations,18000,backend,enhancement,epic:_migrate_to_stripe,team-kata,,,,,,,,
+task,,yj7k2,Investigate: Add-ons checkout process,"What should we do?\\ Please go through the add-ons checkout process designs, and select tasks which are still needs to be implemented.\\ Why should we do it?\\ Because the implementation process got interrupted in December, and we need to catch up which needs to be done.\\ More details\\ Design: https://zpl.io/aMKvYdR\\ ",Open,27/May/19 3:06 PM,,,,1,Team Kata,Engineering,Iterations,7200,epic:_addons,maintenance,team-kata,,,,,,,,,,"27/May/19 3:55 PM;kata.keri@bitrise.io;please check this for estimation
+"
+sub-task,qd9bp,,"Ask Infra before deploying, to make sure DEN is already configured to handle `--free` tagged tasks!",null,Open,01/Apr/19 4:53 PM,,,,null,Team Kata,Engineering,Iterations,,,,,,,,,,,,,
+sub-task,107zbz,,Review,null,Open,07/Jun/19 5:39 PM,,,,null,Team Kata,Engineering,Iterations,3600,,,,,,,,,,,,
+task,,yj944,Investigation: Move internal/external pages into different projects,"What should we do?\\ We should do an investigation about how we can split off the dashboard (and the internal pages after that) from the landing page (and that's external pages).\\ Why should we do it?\\ So when we make changes on one part of the product, we don't have to build the whole thing.\\ More details\\ For the redesign this is pretty much needed.\\ ",Closed,27/May/19 3:39 PM,,,,1,Team Kata,Engineering,Iterations,10800,investigation,maintenance,team-kata,,,12/Jun/19 3:31 PM;Admin;https://attachments.clickup.com/c704e747-b004-40b5-b154-9557e79902db/shared.pdf,12/Jun/19 3:31 PM;Admin;https://attachments.clickup.com/87a4c59b-7ee3-451f-85aa-098d9e0941ae/prime.pdf,12/Jun/19 3:31 PM;Admin;https://attachments.clickup.com/997429ba-76e8-467d-ba81-bd3d2fd35019/pages.pdf,12/Jun/19 3:31 PM;Admin;https://attachments.clickup.com/623b6347-a4e7-45e1-b985-7143c4f41174/app.pdf,12/Jun/19 3:31 PM;Admin;https://attachments.clickup.com/6121ded5-f0dc-40a6-89f5-bd06dcbd04a2/dashboard.pdf,12/Jun/19 3:31 PM;Admin;https://attachments.clickup.com/58ed6a1e-e4d9-4775-9855-198765df59b8/models.pdf,,"11/Jun/19 1:39 PM;zoltan.nyikos@bitrise.io;Created a follow up card 10e121 
+","07/Jun/19 5:04 PM;zoltan.nyikos@bitrise.io;app.pdf
+dashboard.pdf
+models.pdf
+pages.pdf
+prime.pdf
+shared.pdf
+Created some dependency graphs for the various parts of the webapp
+Green means that the given file is under its module file in the path, red means that the given file is an external dependency.
+Replaced the graphs with colored versions, each color means a different module.
+","27/May/19 3:54 PM;kata.keri@bitrise.io;please check this for estimation
+"
+sub-task,dgt68,,Release offline,null,Open,28/Feb/19 10:58 AM,,,,null,Team Kata,Engineering,Iterations,,,,,,,,,,,,,
+sub-task,yj944,,Create a follow up card,null,Open,27/May/19 3:39 PM,,,,null,Team Kata,Engineering,Iterations,,,,,,,,,,,,,
+sub-task,107z9b,,Review,null,Open,07/Jun/19 5:37 PM,,,,null,Team Kata,Engineering,Iterations,3600,,,,,,,,,,,,
+sub-task,qd9bp,,Review,null,Open,25/Apr/19 11:32 AM,,,,null,Team Kata,Engineering,Iterations,1800,,,,,,,,,,,,
+sub-task,xuknb,,Review,null,Open,21/May/19 2:32 PM,,,,null,Team Kata,Engineering,Iterations,,,,,,,,,,,,,
+bug,,t73cu,Investigation: Sitemap is outdated - make it dynamic (Customer Success Stories),"Actual Behaviour\\ www.bitrise.io sitemap is outdated and doesn't seem to automatically update with new pages (see https://www.bitrise.io/sitemap.xml,  where none of the newer customer success stories are listed)\\ Expected Behaviour\\ When a new page is added to www.bitrise.io/X, that page is added to the sitemap automagically\\ \\ Devcenter\\ Blog\\ Customer Success Stories\\ 	should be dynamic.\\ \\ Steps to Reproduce\\ visit https://www.bitrise.io/sitemap.xml\\ cry\\ ",Closed,15/Apr/19 3:58 PM,,,,1,Team Kata,Engineering,Iterations,7200,issue,seo,team-kata,,,,,,,,,,"11/Jun/19 5:41 PM;daniel.serleg@bitrise.io;I created an implementation card for Customer success stories page sitemap: 10eeq3 
+","05/Jun/19 8:10 PM;kata.keri@bitrise.io;☝ please take care of these :) 
+","05/Jun/19 8:10 PM;kata.keri@bitrise.io;Investigation for webapp: 100ffw 
+","05/Jun/19 8:09 PM;kata.keri@bitrise.io;Investigation for DevCenter: 100fed 
+","05/Jun/19 8:08 PM;kata.keri@bitrise.io;Investigation for Blog: 100f93 
+","05/Jun/19 8:05 PM;kata.keri@bitrise.io;turned this into an investigation card for CSSs
+","03/Jun/19 9:53 AM;norbert.kovach@bitrise.io;I think Dani did the investigation of this card, but after talking with him on estimation Zoli noticed that the idea of the resolving this issue isn't really good and probably it needs a further investigation, because without that the task owner will just run out of time.
+","30/May/19 5:18 PM;kata.keri@bitrise.io;We already had an investigation card only for Customer Success Stories. ubjamthis part is urgent, do you need to investigate this more? I'm gonna create tasks for the other parts, but the customer success stories are more important.
+","30/May/19 11:18 AM;norbert.kovach@bitrise.io;Needs further investigation, because the sitemap does not include all steps...  etc.
+
+@Kata Kéri pls create investigation card(s) and probably it would be better if you would separate all the projects (devcenter/blog/webapp).
+","22/May/19 2:18 PM;daniel.serleg@bitrise.io;We have to crawl the given site and after that we have to insert the language information. Use the libs above:
+https://github.com/lgraubner/sitemap-generator
+https://www.npmjs.com/package/xml2js
+
+const SitemapGenerator = require('sitemap-generator');
+
+// create generator
+const generator = SitemapGenerator('https://www.bitrise.io/', {
+    maxDepth: 0,
+    filepath: 'src/sitemap.xml',
+    maxEntriesPerFile: 50000,
+    stripQuerystring: true,
+    priorityMap: [0.9],
+    changeFreq: ""daily"",
+    lastMod: true
+});
+
+// register event listeners
+generator.on('done', () => {
+  // sitemaps created
+});
+
+// start the crawler
+generator.start();
+","25/Apr/19 11:40 AM;kata.keri@bitrise.io;Create an investigation card about the customer success story part
+","24/Apr/19 1:20 PM;kata.keri@bitrise.io;Please check this out for estimation
+","24/Apr/19 9:46 AM;kata.keri@bitrise.io;Devcenter
+Blog
+Customer Success Stories
+
+
+","17/Apr/19 10:59 AM;kata.keri@bitrise.io;Add which parts of the website we need dynamic sitemap for.
+"
+task,,zgk8v,Investigate: A/B test for app icon step in app create WF,"As a Bitrise PO I want to know if the app icon step is causing more churn in the  first app create WF setup so that I can validate if it is implemented in the right place or should be moved to Settings.\\ \\ Acceptance criteria:\\ Set up an AB test in Google Optimize to compare the churn of first time users setting up their first app create WF\\ 50-50% split getting the WF with this step and without this step\\ ",🚀 in progress,04/Jun/19 11:12 AM,,,,1,Team Kata,Engineering,Iterations,7200,a/b_test,team-kata,,,,,,,,,,
+task,,xuknb,Create a post-mortem for incident-20190514 (website unavailability from Brazil),"What should we do?\\ Create a post-mortem for incident-20190514 (website unavailability from Brazil)\\ Why should we do it?\\ To mitigate the risk of having similar incidents again.\\ More details\\ ",Open,21/May/19 2:32 PM,,,,2,Team Kata,Engineering,Iterations,7200,maintenance,team-kata,,,,,,,,,,
+sub-task,a3k5r,,Review,null,Open,30/May/19 11:48 AM,,,,null,Team Kata,Engineering,Iterations,1800,,,,,,,,,,,,
+story,,107zbz,Add #preview_change to StripeSubscription,"same API as Recurly...\\ https://stripe.com/gb/blog/preview-subscription-changes\\ \\ set subscription items plan id and quantity\\ https://stripe.com/docs/billing/subscriptions/prorations#previewing-proration\\ ",🚀 in progress,07/Jun/19 5:38 PM,,,,1,Team Kata,Engineering,Iterations,18000,backend,enhancement,epic:_migrate_to_stripe,team-kata,,,,,,,,
+sub-task,dgt68,,Review,null,Open,28/Feb/19 10:58 AM,,,,null,Team Kata,Engineering,Iterations,3600,,,,,,,,,,,,
+sub-task,dgt68,,Release online,null,Open,28/Feb/19 10:58 AM,,,,null,Team Kata,Engineering,Iterations,,,,,,,,,,,,,
+task,,ube7q,Identify and configure an alert that indicates that something is broken on morning-mountain-2270 and an on-call alert have to be sent.,"What should we do?\\ Identify a DataDog metric/alert that indicates with high enough certainty when there's an ongoing issue in production (on morning-mountain-2270 ).\\ \\ Once identified configure an alert for it to notify the person on-call via PagerDuty.\\ Why should we do it?\\ We want to be able to detect and handle errors/issues happening in the production system as quickly as possible.\\ More details\\ What worked best so far is to limit the number of ""on call alerts"" to as few indicators/metrics as we can. Any other warning/alert should still be sent to Slack for inspection, but there has to be one or just a few which triggers an on-call notification, in which case it has to be handled ""no matter what"" (even if there's a meeting or it's the middle of the night).\\ \\ Notes:\\ I already configured this monitor: https://app.datadoghq.com/monitors/9641514?to_ts=1556275004000&from_ts=1556271344000 - this tracks the **max** latency averaged over 5 mins, and triggers if that avg is over 15 seconds (I decreased it to 12 seconds in case we'd reduce the rack timeout to 15 seconds again).\\ ",🚀 in progress,25/Apr/19 11:39 AM,,,,1,Team Kata,Engineering,Iterations,7200,maintenance,team-kata,,,,,,,,,,,"12/Jun/19 12:46 PM;norbert.kovach@bitrise.io;The log sending is working like this:
+heroku drains:add 'https://http-intake.logs.datadoghq.com/v1/input/2647ebcfa0517872fb08d275ee58f057?ddsource=heroku&service=bitrise-website-stagin-pr-3198&host=bitrise-website-stagin-pr-3198' -a bitrise-website-stagin-pr-3198
+","12/Jun/19 10:37 AM;norbert.kovach@bitrise.io;There is some docs about how can we send these logs from Heroku to Datadog:
+https://docs.datadoghq.com/logs/guide/collect-heroku-logs/?tab=ussite
+https://docs.datadoghq.com/logs/log_collection/?tab=tailexistingfiles#getting-started-with-the-agent
+
+https://github.com/Bristlr/heroku-datadog
+
+
+","12/Jun/19 10:02 AM;norbert.kovach@bitrise.io;@Gabor Szakacs  There is no investigation card for this task and I don't really know what to do with it. (The last update was on 26th of Apr.)
+","06/Jun/19 11:22 AM;zoltan.nyikos@bitrise.io;Investigate if we can send heroku logs into datadog without duplicating application logs, and monitor heroku errors too.
+"
+sub-task,t73cu,,Generate the language info too,null,Closed,22/May/19 2:19 PM,,,,null,Team Kata,Engineering,Iterations,,,,,,,,,,,,,
+sub-task,ube7q,,Review,null,Open,25/Apr/19 11:39 AM,,,,null,Team Kata,Engineering,Iterations,,,,,,,,,,,,,
+sub-task,yj7k2,,Create a follow up card,null,Open,27/May/19 3:07 PM,,,,null,Team Kata,Engineering,Iterations,,,,,,,,,,,,,
+story,,a3k5r,(FE) Saving bitrise.yml: display warnings to the user that was given by the CLI,"Using free text in sensitive inputs will result in a warning when the user saves the bitrise.yml. We might want to notify the user about this. It will be displayed in the top of the build log anyway, so the user will be notified anyway, if we don't do this.\\ \\ This was raised after a discussion w/ the tooling team.\\ \\ Please make sure that warnings are returned from the backend even if the validation is successful.\\ As well as that the workflow editor's own Go server returns the same, so e.g. if there are only warnings without an error that will be a 200 OK JSON response but with the warnings included, and that's presented by the workflow editor (UI / Frontend)!\\ \\ the bitrise cli can present validation warning, using the --format json flag, it looks like:\\ \\ \\ {  \\    ""data"":{  \\       ""config"":{  \\          ""is_valid"":false,\\          ""error"":""security issue in script step: sensitive input (content) should be defined as a secret environment variable"",\\          ""warnings"":[  \\             ""invalid step: duplicated input found: (content)""\\          ]\\       },\\       ""secrets"":{  \\          ""is_valid"":false,\\          ""error"":""Invalid invetory format: yaml: unmarshal errors:\\   line 2: cannot unmarshal !!map into []models.EnvironmentItemModel""\\       }\\    }\\ }\\ \\ Design notes:\\ \\ If there's only warning returned at Save (so no error, which means that the config was saved successfully but there were warnings) I'd present a popup with a text e.g.: ""Save was successful but there were a couple of warnings: ..."" (and then the list of warnings in the popup as items - warnings are a list of things, not a single text)\\ ",Closed,30/Oct/18 3:56 PM,,,,2,Team Kata,Engineering,Iterations,7200,enhancement,frontend,team-kata,workflow_editor,,,,,,,,,"12/Jun/19 11:54 AM;norbert.kovach@bitrise.io;WF Editor PR is merged
+
+","30/Oct/18 3:56 PM;gergo.ovari@bitrise.io;https://app.zeplin.io/project/5a955e4a81cc48ce8f9159d5/dashboard?seid=5bd85f4bdf29ce0aa9fabfce
+
+Screen Shot 2018-10-30 at 2.41.45 PM.png
+Screen Shot 2018-10-30 at 2.41.37 PM.png
+Screen Shot 2018-10-30 at 2.41.29 PM.png
+
+","30/Oct/18 3:56 PM;krisztian.godrei@bitrise.io;@Gergely Békési yes the validation command has a --format json option and the command can return warning as well
+","30/Oct/18 3:56 PM;gergely.bekesi@bitrise.io;Is it already implemented in the CLI? Does it retrieve with warning messages?
+"
+story,,dgt68,Allow update of protected Secret value.,"Use case(s)\\ I have a protected Secret stored (e.g. HEROKU_API_KEY ) and I want to update its value.\\ \\ Today I have to go to Secrets, delete the existing HEROKU_API_KEY item and then create a new one as secret keys are unique but you also can't modify the value of a protected secret.\\ \\ The UI/UX is quite confusing too, there's no indication of how I could update the value, in fact the input field receives focus so it seems like I can update it there but I can't. You also have to remember to make the new item a protected one once added. (video attached)\\ How it should work for the user\\ I should be able to overwrite the value of the protected secret, to make it significantly easier to update these secrets, e.g. api keys.\\ Additional resources/research (optional)\\ video attached\\ ",👀 blocked,16/Dec/18 12:44 PM,,,,2,Team Kata,Engineering,Iterations,10800,enhancement,frontend,team-kata,workflow_editor,,12/Jun/19 3:31 PM;Admin;https://attachments.clickup.com/25f297e0-1cf9-4b73-a72f-5cd282bbf2a6/720p-Screen%20Recording%202018-12-16%20at%2012.48.59.mov,,,,,,,"12/Jun/19 7:58 AM;norbert.kovach@bitrise.io;Website PR: https://github.com/bitrise-io/bitrise-website/pull/3198
+","12/Jun/19 7:57 AM;norbert.kovach@bitrise.io;WF PR: https://github.com/bitrise-io/bitrise-workflow-editor/pull/380
+
+","11/Jun/19 9:17 AM;norbert.kovach@bitrise.io;Edit button doesn't have ""isProtected check"", maybe you meant the ""Save"" button
+
+","03/May/19 5:38 PM;zoltan.nyikos@bitrise.io;Updated with an implementation plan
+","28/Feb/19 11:45 AM;zoltan.nyikos@bitrise.io;Create an investigation card with 2h estimation, come up with an implementation plan
+Look into how we're saving secrets
+","28/Feb/19 10:58 AM;jozsef.eros@bitrise.io;A secret's input field should not be disabled if it is protected.
+
+Files needed to be updated in WFE:
+secrets.slim
+_SecretsController.js.erb
+
+Tricky, code is already a bit confusing here. Also, keep in mind that protected is website mode-only feature.
+","28/Feb/19 10:32 AM;zoltan.nyikos@bitrise.io;Please check this for estimation 
+",31/Jan/19 10:49 AM;gergo.ovari@bitrise.io;Pls look into this

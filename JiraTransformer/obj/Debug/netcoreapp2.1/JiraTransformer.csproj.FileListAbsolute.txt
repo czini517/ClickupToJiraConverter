@@ -1,0 +1,11 @@
+/Users/linda.czinner/Projects/JiraTransformer/JiraTransformer/bin/Debug/netcoreapp2.1/JiraTransformer.deps.json
+/Users/linda.czinner/Projects/JiraTransformer/JiraTransformer/bin/Debug/netcoreapp2.1/JiraTransformer.runtimeconfig.json
+/Users/linda.czinner/Projects/JiraTransformer/JiraTransformer/bin/Debug/netcoreapp2.1/JiraTransformer.runtimeconfig.dev.json
+/Users/linda.czinner/Projects/JiraTransformer/JiraTransformer/bin/Debug/netcoreapp2.1/JiraTransformer.dll
+/Users/linda.czinner/Projects/JiraTransformer/JiraTransformer/bin/Debug/netcoreapp2.1/JiraTransformer.pdb
+/Users/linda.czinner/Projects/JiraTransformer/JiraTransformer/obj/Debug/netcoreapp2.1/JiraTransformer.csprojAssemblyReference.cache
+/Users/linda.czinner/Projects/JiraTransformer/JiraTransformer/obj/Debug/netcoreapp2.1/JiraTransformer.csproj.CoreCompileInputs.cache
+/Users/linda.czinner/Projects/JiraTransformer/JiraTransformer/obj/Debug/netcoreapp2.1/JiraTransformer.AssemblyInfoInputs.cache
+/Users/linda.czinner/Projects/JiraTransformer/JiraTransformer/obj/Debug/netcoreapp2.1/JiraTransformer.AssemblyInfo.cs
+/Users/linda.czinner/Projects/JiraTransformer/JiraTransformer/obj/Debug/netcoreapp2.1/JiraTransformer.dll
+/Users/linda.czinner/Projects/JiraTransformer/JiraTransformer/obj/Debug/netcoreapp2.1/JiraTransformer.pdb
